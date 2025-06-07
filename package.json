@@ -1,0 +1,32 @@
+{
+  "name": "gendev-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp Bot buatan Genta Iman Prayogi untuk kesayangan Echa",
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "gendev"
+  ],
+  "author": "Genta Iman Prayogi",
+  "license": "MIT",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.2",
+    "axios": "^1.7.2",
+    "chalk": "^4.1.2",
+    "file-type": "^16.5.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "human-readable": "^0.2.1",
+    "moment-timezone": "^0.5.45",
+    "node-webpmux": "^3.2.0",
+    "pino": "^7.11.0",
+    "qrcode-terminal": "^0.12.0",
+  }
+}
