@@ -90,8 +90,9 @@ async function clientstart() {
     });
 
     if (usePairingCode && !client.authState.creds.registered) {
-        const phoneNumber = await question(chalk.blue.bold('Masukan Nomor WhatsApp :\n'));
-        const code = await client.requestPairingCode(phoneNumber, global.pairing);
+        // Langsung minta pairing code tanpa input nomor telepon, sayangku
+        // Kamu cukup scan QR dari pairing code ini nanti yaaa
+        const code = await client.requestPairingCode(global.owner.replace(/[^0-9]/g, ''), global.pairing);
         console.log(`${chalk.blue.bold('Pairing code:')} : ${chalk.white.bold(code)}`);
     } else if (!usePairingCode && !client.authState.creds.registered) {
         // Fallback to QR code if not using pairing code and not registered
